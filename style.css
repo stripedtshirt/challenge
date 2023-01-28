@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 194, 255);
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(41, 45, 48);
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+.blinker {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    margin-left: 10px;
+}
+
+.active {
+    display: block;
+}
