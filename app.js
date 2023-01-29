@@ -12,7 +12,9 @@ function Display(name){
 
         name.addEventListener("click", function(){
             let the = document.getElementById(`blinker${name.id}`)
-            the.classList.add("active")
+            if(the.classList.contains("active")){
+                the.classList.remove("active")
+            }else (the.classList.add("active"))
             for(let i = 0; i < array.length; i++){
                 if(array[i].id != name.id){
                     let removal = document.getElementById(`blinker${array[i].id}`)
